@@ -1,0 +1,26 @@
+{
+  "name": "lending",
+  "version": "1.0.0",
+  "description": "My first project with GIT,GULP,SCSS",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deamodis/landing.git"
+  },
+  "author": "Zhadchenko Vladislav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deamodis/landing/issues"
+  },
+  "homepage": "https://github.com/deamodis/landing#readme"
+}
