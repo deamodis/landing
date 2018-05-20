@@ -28,7 +28,7 @@ gulp.task('templates:compile', function buildHTML() {
 
 gulp.task('styles:compile', function (){
     return gulp.src('source/styles/main.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass().on('error', sass.logError))
         .pipe(rename('main.min.css'))
         .pipe(gulp.dest('build/css'));
 });
@@ -51,13 +51,13 @@ gulp.task('clean',function del(cb){
 
 
 gulp.task('copy:images',function(){
-    return gulp.src('./source/images/**/*.*')
+    return gulp.src('source/images/**/*')
         .pipe(gulp.dest('build/images'))
 })
 
 
 gulp.task('copy:fonts',function(){
-    return gulp.src('./source/fonts/**/*.*')
+    return gulp.src('source/fonts/**')
         .pipe(gulp.dest('build/fonts'));
 })
 
