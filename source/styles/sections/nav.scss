@@ -1,11 +1,24 @@
 .nav{
+  @media (max-width: 530px) {
+    margin-right: 0;
+  }
   display: inline-block;
   vertical-align: top;
   padding-top: 7px;
   margin-right: 15px;
 
+  @media(max-width: 1000px){
+    margin-bottom: 13px;
+  }
+
 
   &__link{
+    @media (max-width: 530px) {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+
     display: inline-block;
     vertical-align: top;
     padding: 10px;
@@ -21,6 +34,9 @@
     }
 
     &:after{
+      @media (max-width: 530px) {
+        display: none;
+      }
       content:'';
       display: inline-block;
       vertical-align: middle;
@@ -35,5 +51,11 @@
       display: none;
     }
 
+  }
+}
+
+@media all and (max-width: 530px){
+  .nav .button{
+    margin: 0;
   }
 }

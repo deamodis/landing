@@ -9,10 +9,26 @@
     justify-content: space-between;
     margin: 0;
     padding: 0 50px;
+
+    @media (max-width: 960px) {
+      justify-content: center;
+    }
   }
 
   &__item{
     width: 25%;
+
+    @media(max-width: 960px){
+      width: 50%;
+      margin-bottom:25px;
+      padding: 8px;
+    }
+    @media(max-width: 665px){
+      width: 100%;
+      margin-bottom:25px;
+      padding: 8px;
+    }
+
   }
 
   &__header{
